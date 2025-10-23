@@ -1,13 +1,6 @@
 # 🚀 Portfolio Personal - Raúl Fernández
 
 <div align="center">
-<a href="#">
-<img src="./public/raulfdez.webp" alt="Portfolio de Raúl Fernández" width="400">
-</a>
-<p></p>
-</div>
-
-<div align="center">
 
 ![Astro Badge](https://img.shields.io/badge/Astro-FF3E00?logo=astro&logoColor=fff&style=flat)
 ![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
@@ -18,7 +11,7 @@
 
 ## 📖 Sobre este proyecto
 
-Este es mi portfolio personal como desarrollador Full-Stack, donde muestro mi experiencia profesional, proyectos destacados y habilidades técnicas. El sitio está construido con tecnologías modernas y cuenta con soporte multiidioma (Español/Inglés).
+Este es mi portfolio personal como desarrollador de software, donde muestro mi experiencia profesional, proyectos destacados y habilidades técnicas. El sitio está construido con tecnologías modernas y cuenta con soporte multiidioma (Español/Inglés).
 
 ### ✨ Características principales
 
