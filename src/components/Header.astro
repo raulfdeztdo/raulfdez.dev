@@ -73,8 +73,8 @@ const navItems = [
 
     const observer = new IntersectionObserver(callback, {
       root: null,
-      rootMargin: "0px",
-      threshold: 0.3,
+      rootMargin: "-20% 0px -60% 0px",
+      threshold: [0, 0.1, 0.2]
     })
 
     sections.forEach((section) => {
