@@ -63,14 +63,14 @@ export const ui = {
         'projects.redalia.description': 'Plataforma para la venta, renovación y gestión de certificados SSL. Desarrollado en PHP e interfaz con jQuery y Foundation.',
 
         'about.name_alt': 'Raúl Fernández Tirado',
-        'about.paragraph1': 'Me llamo Raúl Fernández Tirado, soy Andaluz pero vivo en Santiago de Compostela, actualmente',
-        'about.paragraph1_highlight': 'trabajo desarrollando aplicaciones web con PHP en Symfony y anteriormente con Laravel',
+        'about.paragraph1': 'Me llamo Raúl Fernández Tirado, Linarense de nacimiento (Jaén) y actualmente vivo en Santiago de Compostela y ',
+        'about.paragraph1_highlight': 'trabajo desarrollando aplicaciones web con PHP en Symfony anteriormente con Laravel',
         'about.paragraph2': 'Estoy graduado en ',
         'about.paragraph2_highlight': 'Ingeniería Informática por la Universidad de Jaén',
         'about.paragraph2_continuation': '. con la especialidad de "Tecnologías de la información"',
         'about.paragraph3': 'Como desarrollador de software',
-        'about.paragraph3_highlight': 'siempre he trabajado con PHP, aunque tengo conocimientos en ',
-        'about.paragraph3_emphasis': 'C++, Java, Python como lenguajes de programación back-end y conocimientos básicos en Javascript ',
+        'about.paragraph3_highlight': 'siempre he trabajado con PHP, aunque tengo conocimientos y algo de experiencia en ',
+        'about.paragraph3_emphasis': 'C++, Java, Python como lenguajes de programación back-end, conocimientos básicos en Javascript ',
         'about.paragraph3_continuation': 'y algunos frameworks de este como Vue.js y React',
         'about.paragraph3_end': '. En mis ratos libres a parte de hacer deporte me gusta aprender el trading y crear indicadores con Pine Script, además de investigar y entender como funcionan los nuevos avances con IA.',
 
@@ -147,7 +147,7 @@ export const ui = {
         'projects.redalia.description': 'Platform for selling, renewing and managing SSL certificates. Developed in PHP and interface with jQuery and Foundation.',
 
         'about.name_alt': 'Raúl Fernández Tirado',
-        'about.paragraph1': 'My name is Raúl Fernández Tirado, I\'m Andalusian but I live in Santiago de Compostela, currently',
+        'about.paragraph1': 'My name is Raúl Fernández Tirado, I\'m from Linares (Jaén) but I live in Santiago de Compostela, currently',
         'about.paragraph1_highlight': 'I work developing web applications with PHP in Symfony and previously with Laravel',
         'about.paragraph2': 'I graduated in ',
         'about.paragraph2_highlight': 'Computer Engineering from the University of Jaén',
