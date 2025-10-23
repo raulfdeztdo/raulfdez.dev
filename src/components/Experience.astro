@@ -1,0 +1,55 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const EXPERIENCE = [
+    {
+        date: t('experience.emais.date'),
+        img: "/companies/emais.webp",
+        title: t('experience.emais.title'),
+        company: t('experience.emais.company'),
+        description: t('experience.emais.description'),
+    },
+    {
+        date: t('experience.itgallery.date'),
+        img: "/companies/itg.webp",
+        title: t('experience.itgallery.title'),
+        company: t('experience.itgallery.company'),
+        description: t('experience.itgallery.description'),
+    },
+    {
+        date: t('experience.inforalia.date'),
+        img: "/companies/inforalia.webp",
+        title: t('experience.inforalia.title'),
+        company: t('experience.inforalia.company'),
+        description: t('experience.inforalia.description'),
+    },
+    {
+        date: t('experience.riosa.date'),
+        img: "/companies/riosa.webp",
+        title: t('experience.riosa.title'),
+        company: t('experience.riosa.company'),
+        description: t('experience.riosa.description'),
+    },
+    {
+        date: t('experience.sunaca.date'),
+        img: "/companies/sunaca.webp",
+        title: t('experience.sunaca.title'),
+        company: t('experience.sunaca.company'),
+        description: t('experience.sunaca.description'),
+    },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
