@@ -21,7 +21,6 @@ pnpm-debug.log*
 .DS_Store
 bun.*
 
-package-lock.json
 pnpm-lock.yaml
 opencode.jsonc
 skills-lock.json
