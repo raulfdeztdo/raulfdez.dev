@@ -24,6 +24,6 @@ export function getRouteFromUrl(url: URL): string | undefined {
     return path;
 }
 
-export function translatePath(lang: keyof typeof ui, path: string, l: string = defaultLang) {
+export function translatePath(lang: keyof typeof ui, path: string) {
     return !path || path === '/' ? `/${lang}` : `/${lang}${path}`;
 }

@@ -13,6 +13,10 @@ interface Props {
 
 const { description, title } = Astro.props
 const lang = getLangFromUrl(Astro.url);
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const esURL = new URL('/', Astro.site);
+const enURL = new URL('/en/', Astro.site);
+const ogImage = new URL('/porfolio.webp', Astro.site);
 ---
 
 <!doctype html>
@@ -24,10 +28,47 @@ const lang = getLangFromUrl(Astro.url);
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+
+    <link rel="canonical" href={canonicalURL.href} />
+    <link rel="alternate" hreflang="es" href={esURL.href} />
+    <link rel="alternate" hreflang="en" href={enURL.href} />
+    <link rel="alternate" hreflang="x-default" href={esURL.href} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL.href} />
+    <meta property="og:image" content={ogImage.href} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content={lang === "en" ? "en_US" : "es_ES"} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage.href} />
+
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Raúl Fernández Tirado",
+      "url": "https://raulfdez.dev",
+      "jobTitle": "Software Developer",
+      "sameAs": [
+        "https://linkedin.com/in/raulfdeztdo",
+        "https://github.com/raulfdeztdo"
+      ],
+      "knowsAbout": ["PHP", "Symfony", "Laravel", "Web Development"],
+      "image": "https://raulfdez.dev/raulfdez.webp"
+    })} />
+
     <ViewTransitions />
   </head>
 
   <body class="relative text-black dark:text-white">
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-yellow-400 focus:text-black focus:rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600"
+    >
+      Skip to main content
+    </a>
     <div
       class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950
       bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))]
@@ -35,7 +76,9 @@ const lang = getLangFromUrl(Astro.url);
     >
     </div>
     <Header />
-    <slot />
+    <main id="main-content">
+      <slot />
+    </main>
     <Footer />
     <style is:global>
       :root {
@@ -55,9 +98,23 @@ const lang = getLangFromUrl(Astro.url);
         overscroll-behavior: none;
       }
 
+      :focus-visible {
+        outline: 2px solid rgba(234, 179, 8, 0.8);
+        outline-offset: 2px;
+      }
+
       @media (prefers-reduced-motion: reduce) {
         html {
           scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
         }
       }
 

@@ -34,6 +34,7 @@ const navItems = [
   class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2"
 >
   <nav
+    aria-label="Main"
     class="flex px-2 sm:px-3 text-xs sm:text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center max-w-fit"
   >
     {
@@ -57,7 +58,7 @@ const navItems = [
     const sections = document.querySelectorAll("section")
     const navItems = document.querySelectorAll("header nav a")
 
-    const callback = (entries: any[]) => {
+    const callback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           navItems.forEach((item) => {
