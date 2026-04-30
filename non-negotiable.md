@@ -4,7 +4,7 @@
 Toda key en `src/i18n/ui.ts` debe existir en **ambos** objetos `es` y `en`. Formato: `domain.element` (ej: `hero.greeting`). Nunca hardcodear texto en `.astro`, usar siempre `t('key')`.
 
 ## 2. Build sin errores
-`pnpm build` ejecuta `astro check` antes de build. Debe pasar con **0 errores TypeScript**.
+`npm run build` ejecuta `astro check` antes de build. Debe pasar con **0 errores TypeScript**.
 
 ## 3. Tailwind-only
 Solo clases Tailwind para estilos. Nada de CSS externo. `<style>` scoped solo para `@keyframes`. `<style is:global>` solo en Layout.ao (fuentes, scroll, color-scheme). Dark mode con `dark:` prefix.
@@ -31,7 +31,7 @@ Nunca hardcodear API keys, tokens ni credenciales. `.env` está en `.gitignore`.
 El sitio usa `<ViewTransitions />`. Scripts cliente deben escuchar `astro:after-swap` para re-inicializar estado. Usar `transition:persist` en elementos que persisten entre navegaciones.
 
 ## 11. Verificar con build
-Tras cualquier cambio en `.astro`, `.ts` o `.tsx` → `pnpm build`. `dist/` nunca se commitea.
+Tras cualquier cambio en `.astro`, `.ts` o `.tsx` → `npm run build`. `dist/` nunca se commitea.
 
 ## 12. SPA estático
 Sin SSR, sin endpoints API. El catch-all `/*` → `/index.html` de Netlify es el único "enrutamiento" en producción.

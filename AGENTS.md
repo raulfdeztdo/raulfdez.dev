@@ -7,21 +7,23 @@
 - **License:** CC BY-NC 4.0 | **Template:** midudev/porfolio.dev
 
 ## Stack
-| Layer | Tech | Version |
-|-------|------|---------|
-| Framework | Astro | 4.4.5 |
-| Language | TypeScript | 5.3.3 |
-| CSS | Tailwind CSS | 3.4.1 (darkMode: `class`) |
-| Font | Onest Variable (@fontsource) | 5.0.2 |
-| Package manager | pnpm | — |
-| Runtime | Node.js 18 | — |
+> **Las versiones exactas están en `package.json`.** El agente debe leerlas de ahí o inferirlas de los imports. No uses versiones hardcodeadas en ningún fichero.
+
+| Layer | Tech | Dónde consultar versión |
+|-------|------|-------------------------|
+| Framework | Astro | `package.json` → `"astro"` |
+| Language | TypeScript | `package.json` → `"typescript"` |
+| CSS | Tailwind CSS (darkMode: `class`) | `package.json` → `"tailwindcss"` — **Usa v3.x con JS config** (`tailwind.config.mjs`). Ignorar referencias a v4.1+ (CSS-first, `@theme`) del skill `tailwind-css-patterns`. |
+| Font | Onest Variable (@fontsource) | `package.json` → `"@fontsource-variable/onest"` |
+| Package manager | npm | — |
+| Runtime | Node.js 18 | `netlify.toml` → `NODE_VERSION` |
 | Deploy | Netlify (Git CI) | — |
 
 ## Commands
 ```bash
-pnpm dev      # Dev server :4321
-pnpm build    # astro check → astro build (SIEMPRE tras cambios)
-pnpm preview  # Preview dist/
+npm run dev      # Dev server :4321
+npm run build    # astro check → astro build (SIEMPRE tras cambios)
+npm run preview  # Preview dist/
 ```
 
 ## MCP — Obligatorio

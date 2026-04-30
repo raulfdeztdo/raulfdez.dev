@@ -33,14 +33,16 @@ Basado en la plantilla [midudev/porfolio.dev](https://github.com/midudev/porfoli
 
 ## 🛠️ Stack tecnológico
 
-| Capa | Tecnología | Versión |
-|------|-----------|---------|
-| Framework | [Astro](https://astro.build) | 4.4.5 |
-| Estilos | [Tailwind CSS](https://tailwindcss.com) | 3.4.1 |
-| Lenguaje | [TypeScript](https://www.typescriptlang.org) | 5.3.3 |
-| Tipografía | [Onest Variable](https://fontsource.org) | 5.0.2 |
-| i18n | Sistema propio (sin librería externa) | — |
-| Deploy | [Netlify](https://netlify.com) | Git CI |
+> Las versiones exactas están en [`package.json`](package.json).
+
+| Capa | Tecnología |
+|------|-----------|
+| Framework | [Astro](https://astro.build) |
+| Estilos | [Tailwind CSS](https://tailwindcss.com) |
+| Lenguaje | [TypeScript](https://www.typescriptlang.org) |
+| Tipografía | [Onest Variable](https://fontsource.org) |
+| i18n | Sistema propio (sin librería externa) |
+| Deploy | [Netlify](https://netlify.com) |
 
 ---
 
