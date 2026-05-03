@@ -88,7 +88,7 @@ Sistema custom sin librería externa:
 
 ## Commits — Conventional Commits
 ```
-<tipo>(<scope>): <descripción en español>
+<tipo>(<scope>): <descripción en inglés>
 ```
 Tipos: `feat | fix | docs | refactor | ci | chore | style | test | perf`
 
