@@ -10,6 +10,7 @@ export const ui = {
         'nav.home': 'Inicio',
         'nav.experience': 'Experiencia',
         'nav.projects': 'Proyectos',
+        'nav.personal_projects': 'Personales',
         'nav.about': 'Sobre mí',
         'nav.contact': 'Contacto',
 
@@ -20,6 +21,7 @@ export const ui = {
 
         'section.experience': 'Experiencia laboral',
         'section.projects': 'Proyectos participados',
+        'section.personal_projects': 'Proyectos personales',
         'section.about': 'Sobre mí',
 
         'experience.emais.date': 'May 2024 - Actualmente',
@@ -62,6 +64,15 @@ export const ui = {
         'projects.redalia.title': 'Redalia',
         'projects.redalia.description': 'Plataforma para la venta, renovación y gestión de certificados SSL. Desarrollada en PHP con interfaz jQuery y Foundation.',
 
+        'personal_projects.kernelia.title': 'Kernelia',
+        'personal_projects.kernelia.description': 'Agregador bilingüe de noticias sobre Inteligencia Artificial. Recopila publicaciones de medios de referencia, las deduplica, las clasifica por categoría y genera resúmenes mediante un agente IA (Llama 3.3 70B sobre Cerebras). Stack: Next.js 15, React 19, TypeScript estricto, Tailwind v4, Supabase Postgres y Drizzle ORM.',
+
+        'personal_projects.forgottenbranches.title': 'Forgotten Branches',
+        'personal_projects.forgottenbranches.description': 'CLI + interfaz web local para escanear repositorios git y clasificar ramas locales olvidadas (mergeadas, huérfanas, abandonadas o activas), con archivado y borrado en masa. Construido con TypeScript, React 18, Vite y Express, instalable como comando global vía script.',
+
+        'personal_projects.devtools.title': '</devTools>',
+        'personal_projects.devtools.description': 'Suite de 29 herramientas de desarrollo 100% offline (JSON, conversores, generadores, formateadores, regex, JWT…). Todo el procesamiento ocurre en el navegador, sin telemetría ni CDN externos. Construida con Vue 3, Tailwind CSS y Vite.',
+
         'about.name_alt': 'Raúl Fernández Tirado',
         'about.paragraph1': 'Soy Raúl Fernández Tirado, desarrollador de software de Linares (Jaén) viviendo en Galicia. Actualmente trabajo en <strong>Emais</strong> desarrollando aplicaciones web con <strong>PHP y Symfony</strong> —anteriormente con <strong>Laravel</strong>— integrando inteligencia artificial en los procesos de desarrollo back-end.',
         'about.paragraph2': 'Me gradué en <strong>Ingeniería Informática por la Universidad de Jaén</strong>, con la especialidad en Tecnologías de la Información.',
@@ -89,6 +100,7 @@ export const ui = {
         'nav.home': 'Home',
         'nav.experience': 'Experience',
         'nav.projects': 'Projects',
+        'nav.personal_projects': 'Personal',
         'nav.about': 'About me',
         'nav.contact': 'Contact',
 
@@ -99,6 +111,7 @@ export const ui = {
 
         'section.experience': 'Work Experience',
         'section.projects': 'Featured Projects',
+        'section.personal_projects': 'Personal Projects',
         'section.about': 'About me',
 
         'experience.emais.date': 'May 2024 - Present',
@@ -140,6 +153,15 @@ export const ui = {
 
         'projects.redalia.title': 'Redalia',
         'projects.redalia.description': 'Platform for selling, renewing and managing SSL certificates. Developed in PHP with a jQuery and Foundation interface.',
+
+        'personal_projects.kernelia.title': 'Kernelia',
+        'personal_projects.kernelia.description': 'Bilingual AI news aggregator. It collects posts from reference media, deduplicates them, classifies them by category and generates summaries using an AI agent (Llama 3.3 70B on Cerebras). Stack: Next.js 15, React 19, strict TypeScript, Tailwind v4, Supabase Postgres and Drizzle ORM.',
+
+        'personal_projects.forgottenbranches.title': 'Forgotten Branches',
+        'personal_projects.forgottenbranches.description': 'CLI + local web UI to scan git repositories and classify forgotten local branches (merged, orphan, abandoned or active), with archiving and bulk deletion. Built with TypeScript, React 18, Vite and Express, installable as a global command via script.',
+
+        'personal_projects.devtools.title': '</devTools>',
+        'personal_projects.devtools.description': 'Suite of 29 fully offline developer tools (JSON, converters, generators, formatters, regex, JWT…). All processing happens in the browser, with no telemetry or external CDNs. Built with Vue 3, Tailwind CSS and Vite.',
 
         'about.name_alt': 'Raúl Fernández Tirado',
         'about.paragraph1': 'I\'m Raúl Fernández Tirado, a software developer from Linares (Jaén) living in Galicia. I currently work at <strong>Emais</strong> building web applications with <strong>PHP and Symfony</strong> —previously with <strong>Laravel</strong>— integrating artificial intelligence into back-end development processes.',

@@ -24,7 +24,9 @@ const ogImage = new URL('/porfolio.webp', Astro.site);
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#d6d3d1" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#030712" media="(prefers-color-scheme: dark)" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
@@ -62,7 +64,7 @@ const ogImage = new URL('/porfolio.webp', Astro.site);
     <ViewTransitions />
   </head>
 
-  <body class="relative text-black dark:text-white">
+  <body class="relative text-black bg-stone-300 dark:bg-gray-950 dark:text-white">
     <a
       href="#main-content"
       class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-yellow-400 focus:text-black focus:rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600"
@@ -70,8 +72,8 @@ const ogImage = new URL('/porfolio.webp', Astro.site);
       Skip to main content
     </a>
     <div
-      class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950
-      bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))]
+      class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-stone-300 dark:bg-gray-950
+      bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(214,211,209,0))]
       dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
     >
     </div>
