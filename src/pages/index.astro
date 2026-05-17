@@ -7,6 +7,7 @@ import CodeIcon from "@/components/icons/Code.astro";
 import Experience from "@/components/Experience.astro";
 import ProfileCheck from "@/components/icons/ProfileCheck.astro";
 import Projects from "@/components/Projects.astro";
+import PersonalProjects from "@/components/PersonalProjects.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
 import Hero from "@/components/Hero.astro";
 import TitleSection from "@/components/TitleSection.astro";
@@ -22,7 +23,7 @@ const t = useTranslations(lang);
       <Hero />
     </SectionContainer>
   </div>
-  <div class="space-y-24">
+  <div class="px-4 space-y-24">
     <SectionContainer id="experience">
       <TitleSection>
         <Briefcase class="size-8" />
@@ -37,6 +38,14 @@ const t = useTranslations(lang);
         {t("section.projects")}
       </TitleSection>
       <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="personal-projects">
+      <TitleSection>
+        <CodeIcon class="size-7" />
+        {t("section.personal_projects")}
+      </TitleSection>
+      <PersonalProjects />
     </SectionContainer>
 
     <SectionContainer id="about-me">
